@@ -4,10 +4,14 @@ const onlineUsers = {};
 
 const setupSocket = (server) => {
   io = require("socket.io")(server, {
-    cors: { origin: ["http://localhost:5173","https://project-assistant-online-front.vercel.app"] ,
-      methods:["GET","POST","PUT","DELETE"],
-      credential:true,
-    },
+    cors: {
+      origin: [
+        "http://localhost:5173",
+        "https://project-assistant-online-front.vercel.app"
+      ],
+      methods: ["GET", "POST", "PUT", "DELETE"],
+      credentials: true
+    }
   });
 
   io.on("connection", (socket) => {
