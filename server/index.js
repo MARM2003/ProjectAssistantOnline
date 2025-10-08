@@ -32,7 +32,7 @@ app.use("/api/users", userRoutes);
 app.use("/api/notifications", notificationRoutes);
 
 app.get("/",(req,res)=>{
-    res.send("backend working")
+    res.send("backend not working")
 })
 
 const server =app.listen(process.env.PORT,()=>{
