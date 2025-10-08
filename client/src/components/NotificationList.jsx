@@ -4,7 +4,7 @@ import { io } from "socket.io-client";
 import { AuthContext } from "../context/AuthContext";
 
 
-const socket = io("http://localhost:5000"); // your backend
+const socket = io("https://project-assistant-online-marmkumars-projects.vercel.app"); // your backend
 
 const NotificationList = () => {
   const [notifications, setNotifications] = useState([]);
