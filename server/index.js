@@ -30,6 +30,10 @@ app.use("/api/users", userRoutes);
 
 app.use("/api/notifications", notificationRoutes);
 
+app.get("/",(req,res)=>{
+    res.send("backend working")
+})
+
 const server =app.listen(process.env.PORT,()=>{
     console.log("Server is running on" ,process.env.PORT)
 })
