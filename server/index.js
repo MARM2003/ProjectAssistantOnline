@@ -17,7 +17,10 @@ const app=express();
 
 app.use(
   cors({
-    origin: "https://project-assistant-online-front.vercel.app/", 
+    origin: [
+      "https://project-assistant-online-front.vercel.app",
+      "http://localhost:5173"
+    ], 
      methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
   })
