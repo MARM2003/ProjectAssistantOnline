@@ -5,6 +5,7 @@ Project Title
 
 Summary
  - ProjectAssistantOnline is a lightweight project and task management web app with JWT-based authentication and real-time notifications via socket.io. It allows creating projects, adding tasks, assigning users, and delivering notifications to users in real time.
+ 
  Stackholders
  - Admin 
  - Project Manager 
